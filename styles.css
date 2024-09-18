@@ -1,0 +1,170 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: left; /* Teks di pojok kiri */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff7733;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    background: url('https://scontent.fbth5-1.fna.fbcdn.net/v/t39.30808-6/459362942_535291069076900_1358980817654556273_n.jpg?stp=dst-jpg_p180x540&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFWp0ALwTFOByeE6avuWEHGt6mc4KxfORS3qZzgrF85FODQ54RBaxk1OAkuzf64FiRG1WODuY3nNzAK_kp2dX8H&_nc_ohc=WlTRu6utYrUQ7kNvgE9omC6&_nc_ht=scontent.fbth5-1.fna&_nc_gid=AJy4MV9afPMBoqHYnBmZjcn&oh=00_AYA0zzibC9cCOak-IwQbp5RmweDyVAiKCbj0KGT-uYvJBA&oe=66EFF3A8') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.cta-button {
+    background: #ff5733;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #ff7733;
+}
+
+/* Section Styles */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* About Section */
+.about-section {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+}
+
+/* Services Section */
+.services-section {
+    background-color: #f0f0f0;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    min-width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #fafafa;
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}

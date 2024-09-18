@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+
+    <!-- Link ke file CSS eksternal -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <style>
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #25D366; /* Warna hijau WhatsApp */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+        .whatsapp-button:hover {
+            background-color: #128C7E; /* Warna hijau WhatsApp gelap */
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-align: left; /* Ubah text-align menjadi left */
+            padding: 10px;
+            margin-left: 0; /* Menghapus margin otomatis */
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline-block;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ff7733;
+        }
+        .hero-section {
+            background: url('https://scontent.fbth5-1.fna.fbcdn.net/v/t39.30808-6/459362942_535291069076900_1358980817654556273_n.jpg?stp=dst-jpg_p180x540&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFWp0ALwTFOByeE6avuWEHGt6mc4KxfORS3qZzgrF85FODQ54RBaxk1OAkuzf64FiRG1WODuY3nNzAK_kp2dX8H&_nc_ohc=WlTRu6utYrUQ7kNvgE9omC6&_nc_ht=scontent.fbth5-1.fna&_nc_gid=AJy4MV9afPMBoqHYnBmZjcn&oh=00_AYA0zzibC9cCOak-IwQbp5RmweDyVAiKCbj0KGT-uYvJBA&oe=66EFF3A8') no-repeat center center/cover;
+            height: 100vh;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-content {
+            max-width: 600px;
+        }
+        .cta-button {
+            background: #ff5733;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background: #ff7733;
+        }
+        .about-section,
+        .services-section,
+        .contact-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .services-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .service {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo" data-aos="fade-down">
+            PT. HANG TONG MANUFACTORY
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="smooth-scroll">Home</a></li>
+                <li><a href="#about" class="smooth-scroll">About Us</a></li>
+                <li><a href="#services" class="smooth-scroll">Services</a></li>
+                <li><a href="#contact" class="smooth-scroll">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section" data-aos="fade-up">
+        <div class="hero-content">
+            <h1>Welcome to Our Company</h1>
+            <p>Your success is our business.</p>
+            <a href="#about" class="cta-button smooth-scroll">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section" data-aos="fade-left">
+        <h2>About Us</h2>
+        <p>We are a leading company in the industry with years of experience. Our team is dedicated to delivering high-quality products and services to our clients.</p>
+    </section>
+
+    <section id="services" class="services-section">
+        <h2 data-aos="fade-right">Our Services</h2>
+        <div class="services-container">
+            <div class="service" data-aos="zoom-in">
+                <h3>Consulting</h3>
+                <p>We offer expert consulting services to help your business grow.</p>
+            </div>
+            <div class="service" data-aos="zoom-in">
+                <h3>Development</h3>
+                <p>We provide custom software development to meet your business needs.</p>
+            </div>
+            <div class="service" data-aos="zoom-in">
+                <h3>Support</h3>
+                <p>Our support team is always here to assist you.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section" data-aos="fade-up">
+        <h2>Contact Us</h2>
+        <!-- Link ke WhatsApp -->
+        <a href="https://wa.me/6287766386045?text=Hello%20I%20need%20help" class="whatsapp-button" target="_blank">Send Message on WhatsApp</a>
+    </section>
+
+    <footer data-aos="fade-up">
+        <p>&copy; 2024 PT. HANG TONG MANUFACTORY. All rights reserved.</p>
+    </footer>
+
+    <!-- Script AOS untuk animasi -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Inisialisasi AOS
+        AOS.init({
+            duration: 1200, // durasi animasi 1.2 detik
+            once: true // animasi hanya diputar sekali
+        });
+
+        // Smooth scroll untuk anchor links
+        document.querySelectorAll('.smooth-scroll').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
